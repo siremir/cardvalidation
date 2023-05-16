@@ -1,14 +1,63 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-    <script src="index.js" type="module"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Tarjeta de crédito válida</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header></header>
+  <main>
+    <div id="formulario">
+      <h2>Finalizar compra</h2>
+      <form>
+        <label for="card" class="labelInput">Número de tarjeta:</label>
+        <input type="number" id="cardNumber" name="card" class="inputBox" required>
+        <div class="space"></div>
+        <label for="month" class="labelInput">Mes:</label>
+        <input type="number" id="month" name="month" class="inputBoxSmall" required>
+        <label for="year" class="labelInputSmall">Año:</label>
+        <select id="year" name="year" required>
+          <option value="">2018</option>
+          <option value="">2019</option>
+          <option value="">2020</option>
+          <option value="">2021</option>
+          <option value="">2022</option>
+          <option value="">2023</option>
+          <option value="">2024</option>
+          <option value="">2025</option>
+          <option value="">2026</option>
+          <option value="">2027</option>
+          <option value="">2028</option>
+        </select>
+        <label for="cvv" class="labelInputSmall">Cvv:</label>
+        <input type="number" id="cvv" name="cvv" class="inputBoxSmall" required>
+        <div class="space"></div>
+        <label for="fullName" class="labelInput">Nombre completo:</label>
+        <input type="text" id="fullName" name="fullName" class="inputBox" required>
+        <div class="space"></div>
+        <label for="email" class="labelInput">Email:</label>
+        <input type="email" id="email" name="email" class="inputBox" required>
+      </form>
+      <div class="divBoton">
+        <button id="enviar">Enviar</button>
+      </div>
+      <p id="error"></p>
+    </div>
+    <div id="thankYou">
+      <h2 id="thankYouTitle"></h2>
+      <p id="thankYouCard" class="center"></p>
+      <p id="thankYouEmail" class="center"></p>
+      <p id="thankYouP" class="center"></p>
+    </div>
+  </main>
+  <footer></footer>
+  <script src="index.js" type="module"></script>
+</body>
+
 </html>

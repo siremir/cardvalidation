@@ -1,0 +1,104 @@
+body {
+  background-color: #ffe8d6;
+  font-family: 'Roboto', sans-serif;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#formulario {
+  width: 700px;
+  margin: 0 auto;
+  border-radius: 10px;
+  background-color: white;
+  padding-top: 30px;
+  padding-bottom: 80px;
+  font-weight: 400;
+}
+
+form {
+  margin-left: 120px;
+}
+
+h2 {
+  font-size: 34px;
+  color: #066751;
+  text-align: center;
+  /* font-weight: bold; */
+}
+
+#error {
+  margin-left: 120px;
+}
+
+.labelInput {
+  display: inline-block;
+  width: 140px;
+}
+
+.labelInputSmall {
+  display: inline-block;
+  margin-left: 13px;
+  margin-right: 7px;
+}
+
+.inputBox {
+  width: 300px;
+}
+
+.inputBoxSmall {
+  width: 60px;
+}
+
+input {
+  border: 1px solid #b2b2b2;
+  border-radius: 3px;
+}
+
+input:hover {
+  border: 1px solid #6a6a6a;
+}
+
+.space {
+  margin-top: 10px;
+}
+
+.divBoton {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+button {
+  width: 100px;
+  color: white;
+  border-radius: 7px;
+  background-color: #066751;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+button:hover {
+  background-color: #079877;
+}
+
+#error {
+  color: #be004b;
+}
+
+.center {
+  text-align: center;
+}
+
+.imgCard {
+  width: auto;
+  height: 20px;
+  margin-left: 10px;
+  margin-bottom: -3px;
+}
